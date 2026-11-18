@@ -39,4 +39,19 @@ function removeSession($key = ''){
     }
     return false;
 }
+
+//Tạo session flash
+function setSessionFlash(string $key,string $value){
+    $key .= 'Flash';
+    $result = setSession($key, $value);
+    return  $result;
+}
+
+//Lấy session flash
+function getSessionFlash(string $key){
+    $key .= 'Flash';
+    $result = getSession($key);
+    removeSession($key);
+    return  $result;
+}
 ?>

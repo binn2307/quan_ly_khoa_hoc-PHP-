@@ -10,12 +10,7 @@ require_once './includes/connect.php';
 require_once './includes/database.php';
 require_once './includes/session.php';
 
-//setSession('phuc','khoa hoc php');
-//removeSession();
-$a = getSession();
-echo '<pre>';
-print_r($a);
-echo '</pre>';
+require_once './templates/layouts/index.php';
 
 
 $module = _MODULE;
