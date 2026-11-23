@@ -10,7 +10,14 @@ require_once './includes/connect.php';
 require_once './includes/database.php';
 require_once './includes/session.php';
 
-require_once './templates/layouts/index.php';
+//  Email
+require_once './includes/mailer/Exception.php';
+require_once './includes/mailer/PHPMailer.php';
+require_once './includes/mailer/SMTP.php';
+
+require_once './includes/functions.php';
+
+//$val = sendEmail('binle0723@gmail.com','test mail', 'Nội dung email đang test');
 
 
 $module = _MODULE;

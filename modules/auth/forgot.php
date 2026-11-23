@@ -2,7 +2,10 @@
 if(!defined('_BIN')){
     die('Truy cập ko hợp lệ!');
 }
-require_once './templates/layouts/header-auth.php';
+$data = [
+  'title' => 'Quên mật khẩu'
+];
+layout('header-auth',$data);
 ?>
 
 <section class="vh-100">
@@ -16,7 +19,7 @@ require_once './templates/layouts/header-auth.php';
         <form>
           <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
             <p class="lead fw-normal mb-4 me-3">Quên mật khẩu</p>
-          </div>
+          </div>    
           <!-- Email input -->
           <div data-mdb-input-init class="form-outline mb-4">
             <input type="email" id="form3Example3" class="form-control form-control-lg"
@@ -37,5 +40,5 @@ require_once './templates/layouts/header-auth.php';
 </section>
 
 <?php
-    require_once './templates/layouts/footer.php';
+    layout('footer');
 ?>

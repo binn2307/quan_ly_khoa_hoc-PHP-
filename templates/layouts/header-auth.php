@@ -11,7 +11,7 @@ if(!defined('_BIN')){
   <!--begin::Head-->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Đăng nhập</title>
+    <title><?php echo $data['title'] ?? ''; ?></title>
 
     <!--begin::Theme Init (prevents flash of incorrect theme on load, #6043)-->
     <script>

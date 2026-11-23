@@ -2,7 +2,10 @@
 if(!defined('_BIN')){
     die('Truy cập ko hợp lệ!');
 }
-require_once './templates/layouts/header-auth.php';
+$data = [
+  'title' => 'Reset mật khẩu'
+];
+layout('header-auth',$data);
 ?>
 
 <section class="vh-100">
@@ -40,5 +43,5 @@ require_once './templates/layouts/header-auth.php';
 </section>
 
 <?php
-    require_once './templates/layouts/footer.php';
+    layout('footer');
 ?>
